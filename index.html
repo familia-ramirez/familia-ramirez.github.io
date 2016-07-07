@@ -4,22 +4,52 @@
 		<title>Sitio Web de la familia Ramirez</title>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/styles.css">
+
+		<!-- Tracking code for Google Analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-80190995-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+		<!-- End of analytics tracking code -->
+		
 	</head>
 	<body>
 	  <!-- start navigation bar -->
 	  <nav class="navbar navbar-default">
 	  	<div class="container-fluid">
-	  		<ul class="nav navbar-nav">
-	  			<li class="active"><a href="index.html">Página principal</a></li>
-	  			<li><a href="schedule.html">Cronograma de Eventos</a></li>
-	  		</ul>
+ 			<!-- start collapsed navbar -->
+ 			<div class="navbar-header">
+ 				<button type="button" 
+ 						data-target="#options_navbar"
+ 						class="collapsed navbar-toggle"
+ 						data-toggle="collapse"
+ 						aria-expanded="false">Opciones</button>
+ 			</div>
+ 			<!-- / collapsed navbar -->
+
+	  		<!-- start uncollapsed navbar -->
+	  		<div id="options_navbar" class="collapse navbar-collapse">
+		  		<ul class="nav navbar-nav">
+		  			<li class="active"><a href="index.html" 
+ 						data-toggle="popover"
+ 						data-content="text when popovering">Página principal</a></li>
+		  			<li><a href="schedule.html">Cronograma de Eventos</a></li>
+		  		</ul>
+		  	</div>
+		  	<!-- / uncollapsed navbar -->
 	  	</div>
 	  </nav>
 	  <!-- / navigation bar -->
 
-	  <!-- start title -->
+	  <!-- start middle content -->
 	  <div class="container">
 	  	<h1 class="text-uppercase">Familia Ramírez</h2>
 	  	<blockquote>
@@ -46,7 +76,7 @@
 	  		</div>
 	  	</div>
 	  </div>
-	  <!-- / title -->
+	  <!-- / middle content -->
 	  
 	  <div class="container-fluid">
 	  	
